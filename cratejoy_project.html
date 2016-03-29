@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="https://dl.dropboxusercontent.com/u/1894379/stylesheet-cratejoy.css" />
+    <title>Cratejoy Subscription Box Marketpace</title>
+  </head>
+  <body>
+    <div>
+      <!--<a class="lucky_box" href="#">I'm Feeling Lucky</a>-->
+      <button type="button" onclick="get_lucky()">I'm Feeling Lucky</button>
+    </div>
+  </body>
+
+<script>
+function get_lucky(){
+  var link;
+  var count;
+  count = Math.floor((Math.random() * 10) + 1);
+  if (count == 1){
+    link = "http://artinabox.net/"
+  }
+  else if (count == 2){
+    link = "https://beautyarmy.com/"
+  }
+  else if (count ==3){
+    link = "http://www.bombfell.com/"
+  }
+  else if (count == 4){
+    link = "http://scrubbox.co.uk/"
+  }
+  else if (count == 5){
+    link = "http://www.menareuseless.com/"
+  }
+  else if (count == 6){
+    link = "https://getfreshkit.com/"
+  }
+  else if (count == 7){
+    link = "http://www.kopi.co.uk/"
+  }
+  else if (count == 8){
+      link = "http://www.gothambox.com/"
+  }
+  else if (count == 9){
+      link = "https://stitchfix.com/"
+  }
+  else if (count == 10){
+      link = "http://www.togandporter.com/"
+  }
+  else{
+      link = "http://www.eightpointnine.com/"
+  }
+  window.open(link);
+}
+</script>
+
+</html>
